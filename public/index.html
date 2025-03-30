@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css    " />
+  <title>Bridge-Wallet</title>
+</head>
+
+<body>
+  <div class="wallet-container">
+    <header>
+      <img src="bridge_wallet_logo.webp" alt="Bridge-Wallet Logo" class="logo" />
+      <h1>Bridge-Wallet</h1>
+    </header>
+
+    <section class="balance-section">
+      <h2>Wallet Balance</h2>
+      <p id="balance">0.00 ETH</p>
+      <input id="txt-input" placeholder="Address" />
+    </section>
+
+    <section class="actions">
+      <button id="send-btn">Send</button>
+      <button id="receive-btn">Receive</button>
+    </section>
+
+    <section class="transaction-history">
+      <h3>Transaction History</h3>
+      <ul id="history-list">
+        <li>No recent transactions</li>
+      </ul>
+    </section>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

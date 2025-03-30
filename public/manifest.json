@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Bridge-Wallet",
+  "version": "1.0",
+  "description": "One stop extension for all crypto transaction",
+  "action": { "default_popup": "index.html" },
+ 
+  "background": {
+    "service_worker": "serviceWorker.js",
+    "type": "module"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["scripting"],
+  "host_permissions": ["http://*/*", "https://*/*"]
+}
